@@ -30,7 +30,7 @@ def weather():
     except Exception as e:
         data = {"error": str(e)}
 
-    return render_template('index.html', data=data)
+    return render_template('home.html', data=data)
 
 if __name__ == '__main__':
     app.run()
